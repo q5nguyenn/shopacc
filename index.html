@@ -1,0 +1,699 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        height: min-content;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: min-content;
+      }
+
+      .swiper-slide:not(.swiper-slide-active) {
+        filter: blur(1px);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img src="./images/q.png" alt="" class="img-square" />
+            <div class="fw-bold brand-desc">
+              <div class="gradient">SHOP</div>
+              <div>Acc Game</div>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  <i class="bi bi-joystick me-2"></i> Chọn game</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        data-v-69836fc1=""
+                        class="w-6 h-6 mr-2"
+                        src="https://cdn.gameboost.com/games/league-of-legends/logo/card.svg"
+                      />Liên minh huyền thoại</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        data-v-69836fc1=""
+                        class="w-6 h-6 mr-2"
+                        src="https://cdn.gameboost.com/games/valorant/logo/card.svg"
+                      />Volorant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        data-v-69836fc1=""
+                        class="w-6 h-6 mr-2"
+                        src="https://cdn.gameboost.com/games/overwatch-2/logo/card.svg"
+                      />Overwatch 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        data-v-69836fc1=""
+                        class="w-6 h-6 mr-2"
+                        src="https://cdn.gameboost.com/games/lol-wild-rift/logo/card.svg"
+                      />LoL: Wild Rift</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        data-v-69836fc1=""
+                        class="w-6 h-6 mr-2"
+                        src="https://cdn.gameboost.com/games/teamfight-tactics/logo/card.svg"
+                      />Teamfight Tactics</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  ><i class="bi bi-coin me-2"></i> Nạp tiền
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Nạp bằng thẻ cào</a></li>
+                  <li><a class="dropdown-item" href="#">Nạp bằng Bank</a></li>
+                  <li><a class="dropdown-item" href="#">A third link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"><i class="bi bi-clock-history me-2"></i>Lịch sử mua</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  ><i class="bi bi-file-earmark-person me-2"></i> About</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Check uy tín</a></li>
+                  <li><a class="dropdown-item" href="#">Link hội nhóm</a></li>
+                  <li><a class="dropdown-item" href="#">Link Fanpage</a></li>
+                  <li><a class="dropdown-item" href="#">Link hỗ trợ</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="btn ms-2">Login</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Trust Section -->
+    <div class="container-fluid text-center position-relative">
+      <div class="mainVideo">
+        <video
+          data-srctimeout="https://happysmurf.com/wp-content/uploads/2023/08/96c33c51-f6cd-4f53-b0aa-1a661fb92e77.mp4"
+          muted=""
+          loop=""
+          autoplay=""
+          src="https://happysmurf.com/wp-content/uploads/2023/08/96c33c51-f6cd-4f53-b0aa-1a661fb92e77.mp4"
+        ></video>
+      </div>
+      <h1 class="fw-bold text-uppercase gradient" style="padding-top: 120px; font-size: 54px">Q shop</h1>
+      <h1 class="fw-bold">Shop acc <span class="gradient">League of Legends</span> số 1 Việt Nam</h1>
+      <p class="pt-3 fw-bold fs-6 text-white-50">
+        Tài khoản của chúng tôi có chất lượng cao và đi kèm với chính sách bảo hành.
+      </p>
+      <div class="col-lg-12">
+        <div class="hero__left space-y-20 text-center pb-4 pt-5">
+          <div class="trusted">
+            <div class="avatars -space-x-20" style="display: inline-block">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/bluelikeblue.png" alt="Avatar" class="avatar avatar-sm" />
+              </a>
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/lacky.jpg" alt="Avatar" class="avatar avatar-sm" />
+              </a>
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Avatar" class="avatar avatar-sm" />
+              </a>
+            </div>
+            <span class="fw-bold">Được tin cậy bởi hơn 50,000+ người chơi.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Select game Section -->
+      <div class="container mt-5">
+        <h1 class="text-center mb-5">Tài khoản các loại game mà chúng tôi đang có</h1>
+        <div class="row">
+          <div class="card col">
+            <img
+              class="card-img-top"
+              src="https://cdn.gameboost.com/games/league-of-legends/card/bg.webp"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                <img src="https://cdn.gameboost.com/games/league-of-legends/card/text.webp" alt="" />
+              </h4>
+              <p class="card-text">League of Legends</p>
+            </div>
+          </div>
+          <div class="card col">
+            <img class="card-img-top" src="https://cdn.gameboost.com/games/valorant/card/bg.webp" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                <img src="https://cdn.gameboost.com/games/valorant/card/text.webp" alt="" />
+              </h4>
+              <p class="card-text">Valorant</p>
+            </div>
+          </div>
+          <div class="card col">
+            <img class="card-img-top" src="https://cdn.gameboost.com/games/overwatch-2/card/bg.webp" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                <img src="https://cdn.gameboost.com/games/overwatch-2/card/text.webp" alt="" />
+              </h4>
+              <p class="card-text">Overwatch 2</p>
+            </div>
+          </div>
+          <div class="card col">
+            <img
+              class="card-img-top"
+              src="https://cdn.gameboost.com/games/lol-wild-rift/card/bg.webp"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                <img src="https://cdn.gameboost.com/games/lol-wild-rift/card/text.webp" alt="" />
+              </h4>
+              <p class="card-text">LoL: Wild Rift</p>
+            </div>
+          </div>
+          <div class="card col">
+            <img
+              class="card-img-top"
+              src="https://cdn.gameboost.com/games/teamfight-tactics/card/bg.webp"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                <img src="https://cdn.gameboost.com/games/teamfight-tactics/card/text.webp" alt="" />
+              </h4>
+              <p class="card-text">Teamfight Tactics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="container my-5">
+      <div class="reviews">
+        <a class="" href="https://www.facebook.com/q5nguyen"
+          ><span>Hơn 500 đánh giá trên</span> <i class="bi bi-facebook"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Community Section -->
+    <div class="container">
+      <div class="community">
+        <div class="community__items">
+          <div class="row justify-content-center mb-20_reset">
+            <div class="col-md-4">
+              <div class="item space-y-10">
+                <div class="logo">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <h3 class="text-center">Nhận Acc ngay</h3>
+                <p class="text-center">
+                  Chúng tôi gửi thông tin tài khoản của mình ngay lập tức sau khi khoản thanh toán thành công.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item space-y-10 item-blue">
+                <div class="logo">
+                  <i class="bi bi-trophy"></i>
+                </div>
+                <h3 class="text-center">Sẵn sàng đánh rank</h3>
+                <p class="text-center">Các tài khoản của chúng tôi đều có ít nhất 20 tướng và thấp nhất là cấp 30.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item space-y-10 item-green">
+                <div class="logo">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <h3 class="text-center">Hỗ trợ 24/7</h3>
+                <p class="text-center">
+                  Nhân viên hỗ trợ trực tiếp bất cứ lúc nào trong ngày, cần hỗ trợ hãy liên hệ ngay với chúng tôi!!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- How to buy Section -->
+    <div class="container mt-5 howToBuy">
+      <h1 class="text-center my-5"><span class="gradient">Cách mua acc</span> Liên Minh Huyền Thoại tại Qshop</h1>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-column align-items-center text-center howToBuy-item">
+          <div class="howToBuy-ico">
+            <i class="bi bi-search bi-purple"></i>
+          </div>
+          <p class="howToBuy-sub my-3 fw-bold">Chọn các tài khoản bạn muốn mua</p>
+          <p class="">Bạn có thể mua nhiều sản phẩm cùng lúc khi thanh toán</p>
+        </div>
+        <div class="howToBuy-under-line"></div>
+        <div class="d-flex flex-column align-items-center text-center howToBuy-item">
+          <div class="howToBuy-ico howToBuy-icon-blue">
+            <i class="bi bi-credit-card bi-blue"></i>
+          </div>
+          <p class="howToBuy-sub my-3 fw-bold">Chọn phương thức thanh toán ưa thích của bạn</p>
+          <p class="">Chúng tôi chấp nhận thanh toán bằng thẻ điện thoại, chuyển khoản ngân hàng</p>
+        </div>
+        <div class="howToBuy-under-line"></div>
+        <div class="d-flex flex-column align-items-center text-center howToBuy-item">
+          <div class="howToBuy-ico howToBuy-icon-green">
+            <i class="bi bi-envelope-paper bi-green"></i>
+          </div>
+          <p class="howToBuy-sub my-3 fw-bold">Nhận tài khoản Liên minh của bạn ngay lập tức qua E-mail</p>
+          <p class="">Hãy nhớ kiểm tra thư mục thư rác / thư rác của bạn vì nó cũng có thể nằm ở đó!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <!-- Swiper -->
+    <div class="container text-center mt-5">
+      <h1>Hơn <span class="gradient"> 97,000+ game thủ </span></h1>
+      <h1>Tin tưởng chúng tôi</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="creator_item creator_card space-x-10 swiper-slide">
+            <div class="avatars space-x-10 d-flex">
+              <a href="javascript:;">
+                <img src="https://turbosmurfs.gg/creators/katawina.png" alt="Katawina" class="avatar avatar-md" />
+              </a>
+              <div class="ps-2">
+                <a href="javascript:;">
+                  <p class="avatars_name color_black fw-bold">Katawina</p>
+                  <p class="text-secondary">Giao dịch nhanh chóng, acc vip trắng thông tin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h1 class="text-center my-5">Đọc những bài viết thú vị về Liên Minh Huyền Thoại</h1>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+          <div class="card__item four">
+            <div class="card_body space-y-10">
+              <div class="creators space-x-10">
+                <div class="avatars space-x-3">
+                  <a href="/article/best-items-in-lol-arena">
+                    <img
+                      src="https://turbosmurfs.gg/banners/avatar.png"
+                      alt="Turbosmurfs Avatar"
+                      class="avatar avatar-sm"
+                    />
+                  </a>
+                  <a href="javascript:;">
+                    <p class="avatars_name txt_xs">@turbosmurfs</p>
+                  </a>
+                </div>
+              </div>
+              <div class="card_head">
+                <a href="/article/best-items-in-lol-arena">
+                  <img src="https://cdn.turbosmurfs.gg/thumbnail_heartsteel_c0cb74eb33.jpg" alt="" />
+                </a>
+              </div>
+
+              <h6 class="card_title">Best items in LoL arena</h6>
+              <div class="card_footer d-block space-y-10">
+                <div class="card_footer justify-content-center">
+                  <p>
+                    Items are an essential aspect of League of Legends and they’re the primary fuel of your champion’s
+                    power. They’re important enough to be conside...
+                  </p>
+                </div>
+                <div class="hr"></div>
+                <div class="d-flex align-items-center space-x-10 justify-content-center">
+                  <a class="btn btn-sm btn-primary" href="/article/best-items-in-lol-arena">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+          <div class="card__item four">
+            <div class="card_body space-y-10">
+              <div class="creators space-x-10">
+                <div class="avatars space-x-3">
+                  <a href="/article/the-best-lol-arena-augments">
+                    <img
+                      src="https://turbosmurfs.gg/banners/avatar.png"
+                      alt="Turbosmurfs Avatar"
+                      class="avatar avatar-sm"
+                    />
+                  </a>
+                  <a href="javascript:;">
+                    <p class="avatars_name txt_xs">@turbosmurfs</p>
+                  </a>
+                </div>
+              </div>
+              <div class="card_head">
+                <a href="/article/the-best-lol-arena-augments">
+                  <img src="https://cdn.turbosmurfs.gg/thumbnail_arena1_3fee18cd76.jpg" alt="" />
+                </a>
+              </div>
+
+              <h6 class="card_title">Best LoL Arena Augments</h6>
+              <div class="card_footer d-block space-y-10">
+                <div class="card_footer justify-content-center">
+                  <p>
+                    Innovation is the essential aspect of every video game which is why Riot keeps League fresh with
+                    frequent updates to the game’s mechanics. The newes...
+                  </p>
+                </div>
+                <div class="hr"></div>
+                <div class="d-flex align-items-center space-x-10 justify-content-center">
+                  <a class="btn btn-sm btn-primary" href="/article/the-best-lol-arena-augments">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+          <div class="card__item four">
+            <div class="card_body space-y-10">
+              <div class="creators space-x-10">
+                <div class="avatars space-x-3">
+                  <a href="/article/best-duocomps-lolarena">
+                    <img
+                      src="https://turbosmurfs.gg/banners/avatar.png"
+                      alt="Turbosmurfs Avatar"
+                      class="avatar avatar-sm"
+                    />
+                  </a>
+                  <a href="javascript:;">
+                    <p class="avatars_name txt_xs">@turbosmurfs</p>
+                  </a>
+                </div>
+              </div>
+              <div class="card_head">
+                <a href="/article/best-duocomps-lolarena">
+                  <img src="https://cdn.turbosmurfs.gg/thumbnail_arenawp_4f1746e886.jpg" alt="" />
+                </a>
+              </div>
+
+              <h6 class="card_title">Best duo comps in LoL Arena</h6>
+              <div class="card_footer d-block space-y-10">
+                <div class="card_footer justify-content-center">
+                  <p>
+                    Riot’s newly released Arena mode is certainly one of the most fun ways the player base was able to
+                    enjoy League of Legends in years. League is a gam...
+                  </p>
+                </div>
+                <div class="hr"></div>
+                <div class="d-flex align-items-center space-x-10 justify-content-center">
+                  <a class="btn btn-sm btn-primary" href="/article/best-duocomps-lolarena">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center"><a class="btn btn-primary" href="/blog">View All News</a></div>
+      </div>
+    </div>
+
+    <!-- Sectin support -->
+    <div>
+      <input type="checkbox" id="check" />
+      <label class="chat-btn" for="check">
+        <i class="bi bi-chat-left-fill comment"></i><i class="bi bi-x-lg close"></i>
+      </label>
+      <div class="wrapper">
+        <div class="header">
+          <h5 class="p-3">q5nguyenn Xin chào!</h5>
+          <div class="online p-2 ps-4"><span>Chúng tôi luôn ở đây để hỗ trợ bạn</span></div>
+        </div>
+        <div class="text-center p-2"><span>Please fill out the form to start chat!</span></div>
+        <div class="chat-form">
+          <input type="text" class="form-control" placeholder="Name" />
+          <input type="text" class="form-control" placeholder="Email" />
+          <textarea class="form-control" placeholder="Your Text Message"></textarea>
+          <button class="btn btn-success btn-block">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer__1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 space-y-20">
+            <div class="footer__logo">
+              <a href="index.html" class="navbar-brand">
+                <img src="./images/q.png" alt="" class="img-square" />
+                <div class="fw-bold brand-desc">
+                  <div class="gradient">SHOP</div>
+                  <div>Acc Game</div>
+                </div>
+              </a>
+            </div>
+            <p class="footer__text mt-3">High quality lol smurf accounts for making enemy ragequit at 5 min.</p>
+            <div>
+              <ul class="footer__social space-x-10 mb-40 p-0">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank" title="Turbosmurfs Facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank" title="Turbosmurfs Twitter">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank" title="Turbosmurfs Instagram">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" target="_blank" title="Turbosmurfs Youtube">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vm.tiktok.com/" target="_blank" title="Turbosmurfs TikTok">
+                    <i class="bi bi-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <h6 class="footer__title">Q5nguyenn</h6>
+            <ul class="footer__list p-0">
+              <li><a href="/free-lol-account" title="Free Lol Account">Tài khoản LoL miễn phí</a></li>
+              <li><a href="/lol-duo-finder" title="Find Lol Duo Partner">Tìm người Duol cùng LoL</a></li>
+              <li>
+                <a href="/frequently-asked-questions" title="Frequently Asked Questions">Các câu hỏi thường gặp</a>
+              </li>
+              <li><a href="/contact-us" title="Contact Us">Liên hệ chúng tôi</a></li>
+              <li><a href="/terms-of-service" title="Terms Of Service">Điều khoản dịch vụ</a></li>
+              <li><a href="/privacy-policy" title="Privacy Policy">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-6">
+            <h6 class="footer__title">Accounts</h6>
+            <ul class="footer__list p-0">
+              <li>
+                <a title="Buy LoL EUW Account, League of Legends Smurf" href="/category/league-of-legends-euw-smurfs"
+                  >EUW Smurf Accounts</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Buy League Of Legends EUNE Smurfs, LoL Accounts"
+                  href="/category/league-of-legends-eune-smurfs"
+                  >League of legends Accounts</a
+                >
+              </li>
+              <li>
+                <a title="Buy League Of Legends NA Smurfs, LoL Accounts" href="/category/league-of-legends-na-smurfs"
+                  >Valorant Accounts</a
+                >
+              </li>
+              <li>
+                <a title="Buy League Of Legends TR Smurfs, LoL Accounts" href="/category/league-of-legends-tr-smurfs"
+                  >Overwatch 2 Accounts</a
+                >
+              </li>
+              <li>
+                <a title="Buy League Of Legends OCE Smurfs, LoL Accounts" href="/category/league-of-legends-oce-smurfs"
+                  >LoL: Wild Rift Accounts</a
+                >
+              </li>
+              <li>
+                <a title="Buy League Of Legends BR Smurfs, LoL Accounts" href="/category/league-of-legends-br-smurfs"
+                  >Teamfight Tactics Accounts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright text-center">
+          Copyright © 2023 by q5nguyenn. Created with <i class="bi bi-heart-fill"></i>
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        initialSlide: '4',
+        loop: true,
+        coverflowEffect: {
+          rotate: 10,
+          stretch: 20,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          // el: '.swiper-pagination',
+        },
+      });
+    </script>
+  </body>
+</html>

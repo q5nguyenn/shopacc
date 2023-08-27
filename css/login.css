@@ -1,0 +1,100 @@
+a {
+  color: var(--gray-color);
+}
+
+a:hover {
+  color: var(--blue-color);
+}
+
+.box {
+  margin-top: 10px;
+  padding: 40px;
+  background: #1c1f2c;
+  border: solid 1px #262a3a;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 17px 13px 0 #192c4b05;
+  box-shadow: 0 17px 13px 0 #192c4b05;
+  display: block;
+}
+
+.confirm {
+  margin-top: 10px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+select,
+textarea,
+.custom-select {
+  background: 0 0;
+  color: #232226;
+  background-color: #2f303d !important;
+  border: 1px solid transparent !important;
+  width: 100%;
+  padding: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: inherit;
+  border-radius: 12px;
+  position: relative;
+  -webkit-appearance: none;
+  -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  outline: 0;
+  color: #6f7d95;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='number']:focus,
+select:focus,
+textarea:focus,
+.custom-select:focus {
+  background-color: #242635 !important;
+  border: 1px solid #131721 !important;
+  color: #6f7d95;
+}
+
+.btn-grad {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.social-login-separator {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.social-login-separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-color);
+}
+
+.social-login-separator span {
+  background-color: #1c1f2c;
+  top: 0;
+  position: absolute;
+  line-height: 10px;
+  top: -5px;
+  margin-left: -15px;
+  padding: 0 10px;
+  color: gray;
+  z-index: 1;
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]) {
+  --cb-space-y-reverse: 0;
+  margin-top: calc(20px * calc(1 - var(--cb-space-y-reverse)));
+  margin-bottom: calc(20px * var(--cb-space-y-reverse));
+}
